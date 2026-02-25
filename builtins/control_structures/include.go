@@ -48,15 +48,7 @@ func (controlStructure *IncludeControlStructure) Execute(r *exec.Renderer, tag *
 		}
 	}
 
-	loader, err := r.Loader.Inherit(filename)
-	if err != nil {
-		if controlStructure.ignoreMissing {
-			return nil
-		} else {
-			return errors.Errorf("failed to inherit loader: %s", err)
-		}
-	}
-
+	loader := r.Loader
 	included, err := exec.NewTemplate(filename, r.Config, loader, r.Environment)
 	if err != nil {
 		if controlStructure.ignoreMissing {
