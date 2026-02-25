@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/nikolalohinski/gonja/v2/builtins"
-	"github.com/nikolalohinski/gonja/v2/config"
-	"github.com/nikolalohinski/gonja/v2/exec"
-	"github.com/nikolalohinski/gonja/v2/loaders"
+	"github.com/pgcamus/gonja/v2/builtins"
+	"github.com/pgcamus/gonja/v2/config"
+	"github.com/pgcamus/gonja/v2/exec"
+	"github.com/pgcamus/gonja/v2/loaders"
 )
 
 var (

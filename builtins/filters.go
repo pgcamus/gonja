@@ -14,8 +14,8 @@ import (
 	json "github.com/json-iterator/go"
 	"github.com/pkg/errors"
 
-	"github.com/nikolalohinski/gonja/v2/exec"
-	"github.com/nikolalohinski/gonja/v2/utils"
+	"github.com/pgcamus/gonja/v2/exec"
+	"github.com/pgcamus/gonja/v2/utils"
 )
 
 // Filters export all builtin filters

@@ -3,9 +3,9 @@ package integration_test
 import (
 	"os"
 
-	"github.com/nikolalohinski/gonja/v2"
-	"github.com/nikolalohinski/gonja/v2/exec"
-	"github.com/nikolalohinski/gonja/v2/loaders"
+	"github.com/pgcamus/gonja/v2"
+	"github.com/pgcamus/gonja/v2/exec"
+	"github.com/pgcamus/gonja/v2/loaders"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"

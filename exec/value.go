@@ -11,7 +11,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	u "github.com/nikolalohinski/gonja/v2/utils"
+	u "github.com/pgcamus/gonja/v2/utils"
 )
 
 type Value struct {

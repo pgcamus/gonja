@@ -1,9 +1,9 @@
 package integration_test
 
 import (
-	"github.com/nikolalohinski/gonja/v2"
-	"github.com/nikolalohinski/gonja/v2/exec"
-	"github.com/nikolalohinski/gonja/v2/loaders"
+	"github.com/pgcamus/gonja/v2"
+	"github.com/pgcamus/gonja/v2/exec"
+	"github.com/pgcamus/gonja/v2/loaders"
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
@@ -69,7 +69,7 @@ var _ = Context("tests", func() {
 		shouldRender("{{ 42 is > 31 }}", "True")
 		shouldFail("{{ 42 is greaterthan(True) }}", "True is not a number")
 	})
-	Context("https://github.com/NikolaLohinski/gonja/issues/19", func() {
+	Context("https://github.com/pgcamus/gonja/issues/19", func() {
 		BeforeEach(func() {
 			*context = exec.NewContext(map[string]interface{}{
 				"var1": "1",

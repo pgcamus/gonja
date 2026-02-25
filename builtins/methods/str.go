@@ -3,9 +3,9 @@ package methods
 import (
 	"errors"
 
-	"github.com/nikolalohinski/gonja/v2/builtins/methods/pyerrors"
-	"github.com/nikolalohinski/gonja/v2/builtins/methods/pystring"
-	. "github.com/nikolalohinski/gonja/v2/exec"
+	"github.com/pgcamus/gonja/v2/builtins/methods/pyerrors"
+	"github.com/pgcamus/gonja/v2/builtins/methods/pystring"
+	. "github.com/pgcamus/gonja/v2/exec"
 	"golang.org/x/exp/utf8string"
 )
 

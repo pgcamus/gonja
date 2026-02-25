@@ -1,6 +1,6 @@
 package methods
 
-import "github.com/nikolalohinski/gonja/v2/exec"
+import "github.com/pgcamus/gonja/v2/exec"
 
 var All = exec.Methods{
 	Bool:  boolMethods,

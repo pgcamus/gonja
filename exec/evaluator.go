@@ -7,10 +7,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/nikolalohinski/gonja/v2/config"
-	"github.com/nikolalohinski/gonja/v2/loaders"
-	"github.com/nikolalohinski/gonja/v2/nodes"
-	"github.com/nikolalohinski/gonja/v2/tokens"
+	"github.com/pgcamus/gonja/v2/config"
+	"github.com/pgcamus/gonja/v2/loaders"
+	"github.com/pgcamus/gonja/v2/nodes"
+	"github.com/pgcamus/gonja/v2/tokens"
 )
 
 var (
