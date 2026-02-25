@@ -39,10 +39,13 @@ func (controlStructure *ImportControlStructure) Execute(r *exec.Renderer, tag *n
 		return errors.Errorf("failed to resolve filename: %s", err)
 	}
 
+	/*
 	loader, err := r.Loader.Inherit(filename)
 	if err != nil {
 		return fmt.Errorf("failed to inherit loader '%s' from '%s': %s", r.Loader, filename, err)
 	}
+	*/
+	loader = r.Loader
 
 	template, err := exec.NewTemplate(filename, r.Config, loader, r.Environment)
 	if err != nil {
@@ -92,10 +95,13 @@ func (controlStructure *FromImportControlStructure) Execute(r *exec.Renderer, ta
 		return errors.Errorf("failed to resolve filename: %s", err)
 	}
 
+	/*
 	loader, err := r.Loader.Inherit(filename)
 	if err != nil {
 		return fmt.Errorf("failed to inherit loader '%s' from '%s': %s", r.Loader, filename, err)
 	}
+	*/
+	loader = r.Loader
 
 	template, err := exec.NewTemplate(filename, r.Config, loader, r.Environment)
 	if err != nil {
