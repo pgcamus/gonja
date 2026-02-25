@@ -49,7 +49,7 @@ func (controlStructure *ImportControlStructure) Execute(r *exec.Renderer, tag *n
 
 	template, err := exec.NewTemplate(filename, r.Config, loader, r.Environment)
 	if err != nil {
-		return fmt.Errorf("unable to load template '%s': %s", filename, err)
+		return fmt.Errorf("unable to load template '%s' from loader '%s': %s", filename, loader, err)
 	}
 
 	macros := map[string]exec.Macro{}
@@ -105,7 +105,7 @@ func (controlStructure *FromImportControlStructure) Execute(r *exec.Renderer, ta
 
 	template, err := exec.NewTemplate(filename, r.Config, loader, r.Environment)
 	if err != nil {
-		return fmt.Errorf("unable to load template '%s': %s", filename, err)
+		return fmt.Errorf("unable to load template '%s' from loader '%s': %s", filename, loader, err)
 	}
 
 	imported := template.Macros()
