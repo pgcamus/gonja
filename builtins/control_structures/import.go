@@ -45,7 +45,7 @@ func (controlStructure *ImportControlStructure) Execute(r *exec.Renderer, tag *n
 		return fmt.Errorf("failed to inherit loader '%s' from '%s': %s", r.Loader, filename, err)
 	}
 	*/
-	loader = r.Loader
+	loader := r.Loader
 
 	template, err := exec.NewTemplate(filename, r.Config, loader, r.Environment)
 	if err != nil {
@@ -101,7 +101,7 @@ func (controlStructure *FromImportControlStructure) Execute(r *exec.Renderer, ta
 		return fmt.Errorf("failed to inherit loader '%s' from '%s': %s", r.Loader, filename, err)
 	}
 	*/
-	loader = r.Loader
+	loader := r.Loader
 
 	template, err := exec.NewTemplate(filename, r.Config, loader, r.Environment)
 	if err != nil {
